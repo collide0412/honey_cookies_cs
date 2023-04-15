@@ -1,0 +1,23 @@
+{
+  "name": "Honey Trap",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Honey Trap",
+  
+  "browser_action": {
+    "default_title": "Honey Trap",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "page": "background.html",
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["clipboardWrite", "storage"]
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'ABeeZee', sans-serif;
+      }
+      .wrap-container {
+        width: 350px;
+        height: 220px;
+        background-color: #f5ecd7;
+        padding: 40px 0;
+        position: relative;
+      }
+      .container {
+        background-color: #faeeee;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .logo {
+        margin: 15px auto;
+      }
+      .btn {
+        width: 120px;
+        border: none;
+        padding: 8px;
+        color: #666;
+        background-color: #d9d9d9;
+        border-radius: 5px;
+        font-size: 16px;
+        margin: 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      button > .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+      }
+      .m-hor-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .copyright {
+        text-align: center;
+        font-size: 10px;
+        margin-top: 15px;
+      }
+      .logo2 {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+        align-items: center;
+        display: flex;
+        color: #53361c;
+      }
+      .logo2 > span {
+        margin-right: 10px;
+        font-size: 18px;
+      }
+      .group-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .done {
+        text-align: center;
+        margin-bottom: 5px;
+      }
+      #file {
+        display: none;
+      }
+      #status {
+        color: red;
+        font-size: small;
+        text-align: center;
+      }
+</style>
+    </style>
+  </head>
+  <body>
+    <div class="wrap-container">
+      <input id="file" type="file" />
+      <div class="logo2">
+        <span>HoneyTrap</span>
+        <img class="" src="./images/logo2.png" width="50px" height="50px" />
+      </div>
+      <div class="container">
+        <img class="logo" src="./images/logo.png" width="60px" height="60px" />
+        <!-- <div class="done">Done!</div> -->
+        <div id="status"></div>
+        <button id="upload" class="btn m-hor-auto">
+          <img src="./images/upload.png" class="icon" />
+          Upload
+        </button>
+        <div class="group-btn">
+          <button id="export" class="btn">
+            <img src="./images/export.png" class="icon" />Export</button
+          ><button id="submit" class="btn">
+            <img src="./images/submit.png" class="icon" />Submit
+          </button>
+        </div>
+      </div>
+      <div class="copyright">Copyright © 2023 Honey Cookies</div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
